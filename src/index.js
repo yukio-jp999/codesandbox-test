@@ -160,3 +160,41 @@
 // イコールで配列コピーすると、同じところを参照してしまうため、
 // コピー先の配列を変更するとコピー元の配列も変更されてしまう
 // スプレット構文で書くと、コピー元は影響を受けない
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+// const nameArr = ["田中", "山田", "おじ"];
+
+// for文を使った場合
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index + 1}番目は${nameArr[index]}です。`);
+// }
+
+// 新しい配列を作る
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+
+// console.log(nameArr2);
+
+// // 要素ごとにログを出力
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`));
+
+// // ある条件の値だけ（奇数）抽出する
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
+
+// //おじ以外に"さん"をつけて新しい配列に値を格納する
+// const newNameArr = nameArr.map((name) => {
+//   if (name == "おじ") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+
+// console.log(newNameArr);
